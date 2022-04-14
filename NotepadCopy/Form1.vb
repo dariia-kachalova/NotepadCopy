@@ -26,4 +26,27 @@
     Private Sub DeleteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteToolStripMenuItem.Click
         TextBox.Clear()
     End Sub
+
+    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+
+        '// If (OpenFileDialog1.ShowDialog()) Then
+        '     SaveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*"
+        '     TextBox.LoadFile(OpenFileDialog1.FileName)
+        ' End If
+        OpenFileDialog1.Filter = "TXT Files (*.txt*)|*.txt"
+        If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK _
+         Then
+            My.Computer.FileSystem.WriteAllText _
+            (OpenFileDialog1.FileName, TextBox.Text, True)
+        End If
+    End Sub
+
+    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+        SaveFileDialog1.Filter = "TXT Files (*.txt*)|*.txt"
+        If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK _
+         Then
+            My.Computer.FileSystem.WriteAllText _
+            (SaveFileDialog1.FileName, TextBox.Text, True)
+        End If
+    End Sub
 End Class
