@@ -49,4 +49,9 @@
             (SaveFileDialog1.FileName, TextBox.Text, True)
         End If
     End Sub
+
+    Private Sub FindToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FindToolStripMenuItem.Click
+        Form2.Show()
+    End Sub
+
 End Class
