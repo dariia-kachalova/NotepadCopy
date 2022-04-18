@@ -50,6 +50,8 @@ Partial Class frmMain
         Me.TextBox = New System.Windows.Forms.RichTextBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.FontDialog1 = New System.Windows.Forms.FontDialog()
+        Me.FontToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -171,7 +173,7 @@ Partial Class frmMain
         '
         'FormatToolStripMenuItem
         '
-        Me.FormatToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WordWrapToolStripMenuItem, Me.FontToolStripMenuItem})
+        Me.FormatToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WordWrapToolStripMenuItem, Me.FontToolStripMenuItem, Me.FontToolStripMenuItem1})
         Me.FormatToolStripMenuItem.Name = "FormatToolStripMenuItem"
         Me.FormatToolStripMenuItem.Size = New System.Drawing.Size(70, 24)
         Me.FormatToolStripMenuItem.Text = "Format"
@@ -186,7 +188,7 @@ Partial Class frmMain
         '
         Me.FontToolStripMenuItem.Name = "FontToolStripMenuItem"
         Me.FontToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.FontToolStripMenuItem.Text = "Font"
+        Me.FontToolStripMenuItem.Text = "Font Bold"
         '
         'ViewToolStripMenuItem
         '
@@ -238,6 +240,12 @@ Partial Class frmMain
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'FontToolStripMenuItem1
+        '
+        Me.FontToolStripMenuItem1.Name = "FontToolStripMenuItem1"
+        Me.FontToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.FontToolStripMenuItem1.Text = "Font Regular"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -286,4 +294,6 @@ Partial Class frmMain
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
+    Friend WithEvents FontToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents FontDialog1 As FontDialog
 End Class

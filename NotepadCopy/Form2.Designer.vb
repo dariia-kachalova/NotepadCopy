@@ -28,8 +28,8 @@ Partial Class Form2
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ChkMatchCase = New System.Windows.Forms.CheckBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RdoUp = New System.Windows.Forms.RadioButton()
         Me.RdoDown = New System.Windows.Forms.RadioButton()
+        Me.RdoUp = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -89,17 +89,6 @@ Partial Class Form2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Direction"
         '
-        'RdoUp
-        '
-        Me.RdoUp.AutoSize = True
-        Me.RdoUp.Location = New System.Drawing.Point(0, 19)
-        Me.RdoUp.Name = "RdoUp"
-        Me.RdoUp.Size = New System.Drawing.Size(49, 24)
-        Me.RdoUp.TabIndex = 0
-        Me.RdoUp.TabStop = True
-        Me.RdoUp.Text = "Up"
-        Me.RdoUp.UseVisualStyleBackColor = True
-        '
         'RdoDown
         '
         Me.RdoDown.AutoSize = True
@@ -110,6 +99,17 @@ Partial Class Form2
         Me.RdoDown.TabStop = True
         Me.RdoDown.Text = "Down"
         Me.RdoDown.UseVisualStyleBackColor = True
+        '
+        'RdoUp
+        '
+        Me.RdoUp.AutoSize = True
+        Me.RdoUp.Location = New System.Drawing.Point(0, 19)
+        Me.RdoUp.Name = "RdoUp"
+        Me.RdoUp.Size = New System.Drawing.Size(49, 24)
+        Me.RdoUp.TabIndex = 0
+        Me.RdoUp.TabStop = True
+        Me.RdoUp.Text = "Up"
+        Me.RdoUp.UseVisualStyleBackColor = True
         '
         'Form2
         '

@@ -49,4 +49,20 @@
         SaveFileDialog1.Filter = "TXT Files (*.txt*)|*.txt"
 
     End Sub
+
+    Private Sub ReplaceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReplaceToolStripMenuItem.Click
+        Form2.Show()
+    End Sub
+
+    Private Sub AboutNotepadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutNotepadToolStripMenuItem.Click
+        Form3.Show()
+    End Sub
+
+    Private Sub FontToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FontToolStripMenuItem.Click
+        TextBox.Font = New Font(TextBox.Font, FontStyle.Bold)
+    End Sub
+
+    Private Sub FontToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles FontToolStripMenuItem1.Click
+        TextBox.Font = New Font(TextBox.Font, FontStyle.Regular)
+    End Sub
 End Class
